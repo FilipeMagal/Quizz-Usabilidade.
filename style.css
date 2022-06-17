@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *{
     margin: 0%;
 }
 
 body{
-    font-family: 'Bangers', cursive; 
+    font-family: 'VT323', cursive; 
 }
 
 
@@ -38,6 +40,21 @@ body{
 	zoom: 90%;
 }
 
+.EsferaUsabilidade{
+	width: 350px;
+	margin-top: -200px;
+	margin-left: 900px;
+	
+}
+
+#quintaEsfera{
+	padding-bottom: px;
+}
+
+.valorQuestao{
+	font-size: 25px;
+	color: red;
+}
 
 p{
 	text-align: left;
@@ -153,6 +170,8 @@ span#TimerText{
 	display: none;
 	color: var(--strTitleColor);
 }
+
+
 
 
 .FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
