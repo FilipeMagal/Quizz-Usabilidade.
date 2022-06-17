@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
-<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to thauan."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Freeweek."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="dc:creator" content="thauan" />
-<meta name="dc:title" content="Dragon Ball e As Esferas da Usabilidade" />
+<meta name="dc:creator" content="Freeweek" />
+<meta name="dc:title" content="O Resgate Quizz" />
 <title>
-Dragon Ball e As Esferas da Usabilidade
+	O Resgate Quizz
 </title>
-
-<!-- Made with executable version 7.0 Release 3 Build 0 -->
-
-<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 *{
@@ -21,27 +17,26 @@ body{
     font-family: 'Bangers', cursive; 
 }
 
-
 :root{
 	--strFontSize:       18px;
-	--strTextColor:      #000000;
-	--strTitleColor:     #000000;;
+	--strTextColor:      #ffffff;
+	--strTitleColor:     #ffffff;;
 
-	--strFuncLightColor: #000000;
-	--strFuncShadeColor: #7f7f7f;
+	--strFuncLightColor: #ffffff;
+	--strFuncShadeColor: #000000;
 	--strLinkColor:      #0000FF;
 	--strVLinkColor:     #0000CC;
 	
-	--strNavBarColor:    #FEE100;
-	--strNavLightColor:  #7f7f7f;
-	--strNavShadeColor:  #000000;
-	--strNavTextColor:   #000000;
+	--strNavBarColor:    #0B9781;
+	--strNavLightColor:  #0B9781;
+	--strNavShadeColor:  #ffffff;
+	--strNavTextColor:   #fafafa;
 	
-	--strExBGColor:      #FEE100;
+	--strExBGColor:      #0B9781;
 }
 
 body{
-	background-color: rgba(255, 123, 0, 0.993);
+	background: linear-gradient(0deg, rgba(33,254,33,1) 0%, rgba(1,96,180,1) 100%);
 	margin-right: 5%;
 	margin-left: 5%;
 	font-size: var(--strFontSize);
@@ -50,22 +45,6 @@ body{
 	margin-left: 5%;
 	padding-bottom: 5em;
 	zoom: 90%;
-}
-
-.EsferaUsabilidade{
-	width: 350px;
-	margin-top: -200px;
-	margin-left: 900px;
-	
-}
-
-#quintaEsfera{
-	padding-bottom: px;
-}
-
-.valorQuestao{
-	font-size: 25px;
-	color: red;
 }
 
 p{
@@ -94,8 +73,9 @@ button{
 }
 
 .ExerciseTitle{
-	margin-bottom: -50px;
-} 
+	font-size: 140%;
+	color: var(--strTitleColor);
+}
 
 .ExerciseSubtitle{
 	font-size: 120%;
@@ -104,8 +84,10 @@ button{
 
 div.StdDiv, div.ExerciseContainer, div.ReadingContainer{
 	background-color: var(--strExBGColor);
-	text-align: center;
+	text-align:center;
 	font-size: 1em;
+	border-style: none;
+	border-top: none;
 	color: var(--strTextColor);
 }
 
@@ -117,7 +99,8 @@ div.StdDiv{
 div.ReadingContainer, div.ExerciseContainer{
 	min-width: 15em;
 	flex-grow: 1;
-	flex-basis: 0;	
+	flex-basis: 0;
+
 }
 
 div#ContainerDiv{
@@ -183,8 +166,6 @@ span#TimerText{
 	color: var(--strTitleColor);
 }
 
-
-
 .FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
 	color: var(--strTitleColor);
 }
@@ -202,6 +183,7 @@ span#TimerText{
 	text-align: left;
 }
 
+
 input, textarea{
 	font-family: var(--strFontFace);
 	font-size: 120%;
@@ -212,7 +194,7 @@ select{
 }
 
 div.Feedback { /*  AQUI FILHA DA PUTA*/
-	background-color: white;
+	background-color: rgb(0, 0, 0);
 	left: 33%;
 	width: 34%;
 	top: 33%;
@@ -228,8 +210,6 @@ div.Feedback { /*  AQUI FILHA DA PUTA*/
 	font-size: 1em;
 	margin-top: 110px;
 }
-
-
 div.ExerciseDiv{
 	color: var(--strTextColor);
 }
@@ -306,7 +286,7 @@ a.ExSegment{
 	color: var(--strTextColor);
 	display: inline-block;
 	padding: 0.5em;
-	border: solid 1pt gray;
+	border: solid 1pt rgb(0, 0, 0);
 	margin-bottom: 0.5em;
 }
 
@@ -553,9 +533,6 @@ div.ShortAnswer{
 	color: var(--strExBGColor);
 	background-color: var(--strTextColor);
 }
-
-/*BeginNavBarStyle*/
-
 div.NavButtonBar{
 	text-align: center;	
 	font-size: 1em;
@@ -598,7 +575,6 @@ div.NavButtonBar{
 	zoom: 130%;
 }
 
-/*EndNavBarStyle*/
 
 a{
 	color: var(--strLinkColor);
@@ -640,11 +616,15 @@ div.CardStyleCentered{
 	text-align: right;
 	font-size: 140%;
 }
+
+
 </style>
 
 <script>
 
 //<![CDATA[
+
+<!--
 
 
 
@@ -690,6 +670,8 @@ function ShowMessage(Feedback){
 //Focus the OK button
 	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
 	
+//
+//	RefreshImages();
 //
 }
 
@@ -845,6 +827,20 @@ function Shuffle(InArray){
 function WriteToInstructions(Feedback) {
 	document.getElementById('InstructionsDiv').innerHTML = Feedback;
 
+	
+
+}
+
+
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
 }
 
 
@@ -954,11 +950,11 @@ function ClearTextBoxes(){
 var CurrQNum = 0;
 var CorrectIndicator = '&#x2714;';
 var IncorrectIndicator = '&#x2718;';
-var YourScoreIs = 'Taxa de acerto ';
+var YourScoreIs = 'Pontuação';
 
 //New for 6.2.2.0
-var CompletedSoFar = 'Questões completas até agora: ';
-var ExerciseCompleted = 'Conseguimos, recuperamos as esferas da usabilidade! Agora vamos todos juntos pedir a Shenlong...Usabilidade para todos';
+var CompletedSoFar = 'Questões feitas até agora: ';
+var ExerciseCompleted = '<br> Ufa! Conseguimos salvar a vida do baby Yoshi, agora vamos explodir o castelo do Bowser, venha comigo, aperte em home para terminarmos o serviço!';
 var ShowCompletedSoFar = true;
 
 var ContinuousScoring = true;
@@ -966,16 +962,16 @@ var CorrectFirstTime = 'Questões que voce acertou de primeira: ';
 var ShowCorrectFirstTime = true;
 var ShuffleQs = false;
 var ShuffleAs = false;
-var DefaultRight = 'Você acertou e conseguiu uma esfera da usabilidade.';
-var DefaultWrong = 'Tente novamente';
-var QsToShow = 5;
+var DefaultRight = 'Correto! Passe para a próxima pergunta';
+var DefaultWrong = 'Errado! Tente novamente.';
+var QsToShow = 6;
 var Score = 0;
 var Finished = false;
 var Qs = null;
 var QArray = new Array();
 var ShowingAllQuestions = false;
 var ShowAllQuestionsCaption = 'Ver todas as questões';
-var ShowOneByOneCaption = 'Ver questões uma por uma';
+var ShowOneByOneCaption = 'Ver as questões um a um';
 var State = new Array();
 var Feedback = '';
 var TimeOver = false;
@@ -1155,40 +1151,53 @@ I[0]=new Array();I[0][0]=100;
 I[0][1]='';
 I[0][2]='0';
 I[0][3]=new Array();
-I[0][3][0]=new Array('Aprendizado, Efici\u00EAncia, Erro, Mem\u00F3ria e Satisfa\u00E7\u00E3o.','',1,100,1);
-I[0][3][1]=new Array('Aprendizado, An\u00E1lise, Erro, Satisfa\u00E7\u00E3o e Efici\u00EAncia.','',0,0,1);
-I[0][3][2]=new Array('An\u00E1lise, Efic\u00E1cia, Efici\u00EAncia, Satisfa\u00E7\u00E3o e Mem\u00F3ria.','',0,0,1);
-I[0][3][3]=new Array('An\u00E1lise, Efici\u00EAncia, Sustentabilidade, Erro e Mem\u00F3ria.','',0,0,1);
+I[0][3][0]=new Array('Preven\u00E7\u00F5es de erros','Errado! Tente novamente.',0,0,1);
+I[0][3][1]=new Array('Liberdade de controle f\u00E1cil pro usu\u00E1rio','Errado! Tente novamente.',0,0,1);
+I[0][3][2]=new Array('Visibilidade do sistema','Correto! Essa heur\u00EDstica visa trazer a ideia de que o usu\u00E1rio sempre deve estar entendendo o que est\u00E1 acontecendo no momento como resultado da sua intera\u00E7\u00E3o.',1,100,1);
+I[0][3][3]=new Array('Correspond\u00EAncia entre o sistema e o mundo real','Errado! Tente novamente.',0,0,1);
 I[1]=new Array();I[1][0]=100;
 I[1][1]='';
-I[1][2]='0';
+I[1][2]='3';
 I[1][3]=new Array();
-I[1][3][0]=new Array('Correta.','',1,100,1);
-I[1][3][1]=new Array('Falsa.','',0,0,1);
+I[1][3][0]=new Array('Efic\u00E1cia','Correto! Ele ajuda os usu\u00E1rios a concluir a\u00E7\u00F5es com precis\u00E3o.',1,100,1);
+I[1][3][1]=new Array('Bondade','Errado! Qual seria o motivo de o usu\u00E1rio querer bondade em um sistema?',0,0,1);
+I[1][3][2]=new Array('Efici\u00EAncia','Correto! Os usu\u00E1rios podem executar tarefas rapidamente atrav\u00E9s do processo mais f\u00E1cil.',1,100,1);
+I[1][3][3]=new Array('Fofura','Errado! O usu\u00E1rio quer conseguir ultilizar, n\u00E3o achar fofo.',0,0,1);
+I[1][3][4]=new Array('Engajamento','Correto! Os usu\u00E1rios acham agrad\u00E1vel de usar e apropriado para seu setor/tema.',1,100,1);
+I[1][3][5]=new Array('Tol\u00EArancia a erros','Correto! Ele suporta uma variedade de a\u00E7\u00F5es do usu\u00E1rio e s\u00F3 mostra um erro em situa\u00E7\u00F5es err\u00F4neas genu\u00EDnas.',1,100,1);
+I[1][3][6]=new Array('Facilidade de aprendizado','Correto! Novos usu\u00E1rios podem atingir metas com facilidade e ainda mais facilmente em visitas futuras.',1,100,1);
 I[2]=new Array();I[2][0]=100;
 I[2][1]='';
 I[2][2]='0';
 I[2][3]=new Array();
-I[2][3][0]=new Array('Teste de usabilidade.','',0,0,1);
-I[2][3][1]=new Array('Design centrado no usu\u00E1rio.','',0,0,1);
-I[2][3][2]=new Array('Design de Intera\u00E7\u00E3o.','',1,100,1);
-I[2][3][3]=new Array('Design de experi\u00EAncia.','',0,0,1);
+I[2][3][0]=new Array('Imite o mundo real em rela\u00E7\u00E3o a conceitos, \u00EDcones e linguagem.','Correto! A usabilidade fica bem mais f\u00E1cil e did\u00E1tico ultilizando \u00EDcones, conceitos e linguagens do cotidiano.',0,0,1);
+I[2][3][1]=new Array('Apresente mensagens e a\u00E7\u00F5es instantaneamente compreens\u00EDveis e sem jarg\u00F5es.','Correto! Sempre \u00E9 melhor ler uma mensagem sem termos t\u00E9cnicos que muitas das vezes nem sabe o que significa metade da frase.',0,0,1);
+I[2][3][2]=new Array('N\u00E3o \u00E9 desnecess\u00E1rio fazer testes de usabilidade.','Correto! \u00C9 sempre bom ver se o design est\u00E1 funcionando da maneira correta que deveria ser, assim com esses testes comprovam a efic\u00E1cia do mesmo.',0,0,1);
+I[2][3][3]=new Array('N\u00E3o \u00E9 necess\u00E1rio descrever os links contidos no site.','Errado! O link tem que estar descrito, para que, quando por exemplo, uma pessoa ultilizando um leitor de tela for ouvir o que est\u00E1 escrito nesse link, seja de uma forma clara, precisa e sucinta.',1,100,1);
 I[3]=new Array();I[3][0]=100;
 I[3][1]='';
-I[3][2]='0';
+I[3][2]='3';
 I[3][3]=new Array();
-I[3][3][0]=new Array('Usabilidade.','',0,0,1);
-I[3][3][1]=new Array('Interface.','',0,0,1);
-I[3][3][2]=new Array('IHC.','',0,0,1);
-I[3][3][3]=new Array('Design.','',1,100,1);
+I[3][3][0]=new Array('S\u00E3o confi\u00E1veis pois sabem o que querem, tem convic\u00E7\u00E3o do que falam e tem o direito de ter uma opni\u00E3o formada sobre usabilidade.','Errado! Tente novamente.',0,0,1);
+I[3][3][1]=new Array('Tem que prestar aten\u00E7\u00E3o ao que os usu\u00E1rios dizem, n\u00E3o ao que fazem.','Errado! Tente novamente.',0,0,1);
+I[3][3][2]=new Array('Tinham uma opni\u00E3o forte sobre as especula\u00E7\u00F5es sobre comportamento futuro','Errado! Tente novamente.',0,0,1);
+I[3][3][3]=new Array('N\u00E3o sabem o que querem e as alega\u00E7\u00F5es auto-relatadas n\u00E3o s\u00E3o confi\u00E1veis','Correto! Passe para a pr\u00F3xima pergunta.',1,100,1);
 I[4]=new Array();I[4][0]=100;
 I[4][1]='';
 I[4][2]='0';
 I[4][3]=new Array();
-I[4][3][0]=new Array('Usabilidade \u00E9 a facilidade de uso de um sistema voltado para um p\u00FAblico alvo espec\u00EDfico.','',0,0,1);
-I[4][3][1]=new Array('Usabilidade \u00E9 a facilidade de uso com prop\u00F3sito espec\u00EDfico, para um p\u00FAblico espec\u00EDfico, com uma finalidade espec\u00EDfica.','',1,100,1);
-I[4][3][2]=new Array('Usabilidade \u00E9 mensurar a felicidade de um usu\u00E1rio ao utilizar o seu sistema.','',0,0,1);
-I[4][3][3]=new Array('Usabilidade \u00E9 a aplica\u00E7\u00E3o espec\u00EDfica de um sistema para atingir \u00E0s expectativas de um p\u00FAblico alvo.','',0,0,1);
+I[4][3][0]=new Array('Consist\u00EAncia e padr\u00F5es','Errado! Tente novamente.',0,0,1);
+I[4][3][1]=new Array('Est\u00E9tica e design minimalista','Correto! As interfaces precisam ser limpas de elementos e conte\u00FAdo desnecess\u00E1rios que n\u00E3o suportam os objetivos e tarefas da p\u00E1gina.',1,100,1);
+I[4][3][2]=new Array('Liberdade de controle f\u00E1cil pro usu\u00E1rio','Errado! Tente novamente.',0,0,1);
+I[4][3][3]=new Array('Flexibilidade e efici\u00EAncia de uso','Errado! Tente novamente.',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('XHTML','Errado! o foco da usabilidade n\u00E3o est\u00E1 nessa linguagem de marca\u00E7\u00E3o.',0,0,1);
+I[5][3][1]=new Array('SGML','Errado! o foco da usabilidade n\u00E3o est\u00E1 nessa linguagem de marca\u00E7\u00E3o.',0,0,1);
+I[5][3][2]=new Array('HTML','Correto! O HTML \u00E9 usado principalmente por causa das tags, onde se \u00E9 poss\u00EDvel auxiliam na indexa\u00E7\u00E3o nos mecanismos de pesquisa (Sobre o conte\u00FAdo da imagem por exemplo). Eles tamb\u00E9m ajudam na narra\u00E7\u00E3o do leitor de tela para usu\u00E1rios com defici\u00EAncia visual.',1,100,1);
+I[5][3][3]=new Array('XML','Errado! o foco da usabilidade n\u00E3o est\u00E1 nessa linguagem de marca\u00E7\u00E3o.',0,0,1);
 
 
 function StartUp(){
@@ -1205,6 +1214,7 @@ function StartUp(){
 	
 
 	
+
 
 	
 	CompleteEmptyFeedback();
@@ -1442,6 +1452,85 @@ function FinalAnswer(QNum){
 
 
 
+function CheckMultiSelAnswer(QNum){
+//bail if question doesn't exist or exercise finished
+	if ((State[QNum].length < 1)||(Finished == true)){return;}
+
+//Increment the tries for this question
+	State[QNum][2]++;
+	
+	var ShouldBeChecked;
+	var Matches = 0;
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	
+//Check if there are any mismatches
+	Feedback = '';
+	var CheckBox = null;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		CheckBox = document.getElementById('Q_' + QNum + '_' + ANum + '_Chk');
+		if (CheckBox.checked == true){
+			State[QNum][5] += 'Y';
+		}
+		else{
+			State[QNum][5] += 'N';
+		}
+		ShouldBeChecked = (I[QNum][3][ANum][2] == 1);
+		if (ShouldBeChecked == CheckBox.checked){
+			Matches++;
+		}
+		else{
+			Feedback = I[QNum][3][ANum][1];
+		}
+	}
+//Add the hit readout
+	Feedback = Matches + ' / ' + I[QNum][3].length + '<br />' + Feedback;
+	if (Matches == I[QNum][3].length){
+//It's right
+		CalculateMultiSelQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+		
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's wrong -- Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+	}
+		
+//Show the feedback
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMultiSelQuestionScore(QNum){
+	var Tries = State[QNum][2];
+	var TotAns = State[QNum][1].length;
+	
+//Make sure it's not already complete
+	if (State[QNum][0] < 0){
+		State[QNum][0] = (TotAns - (Tries-1)) / TotAns;
+		if (State[QNum][0] < 0){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+
+
 function CalculateOverallScore(){
 	var TotalWeighting = 0;
 	var TotalScore = 0;
@@ -1559,18 +1648,15 @@ function CheckFinished(){
 </head>
 
 <body onload="StartUp()" id="TheBody" >
-
-<!-- BeginTopNavButtons -->
-
-
-<!-- EndTopNavButtons -->
+	<div class="Titles">
+		<h2 class="ExerciseTitle"> <img src="https://cdn.discordapp.com/attachments/985328330435870764/987117338484678706/zyro-image_13.png" alt="O Resgate Usabilidade Logo" title="O Resgate Usabilidade" width="400px"></h2>
+	
+		<h3 class="ExerciseSubtitle"></h3>
+	</div>
+</div>
 
 <div class="Titles">
-	<h2 class="ExerciseTitle"> <img src="" alt="" title="" width="400px"></h2>
-
-	<h3 class="ExerciseSubtitle"></h3>
-
-
+	<h2 class="ExerciseTitle">Ser&#x00E3;o 6 perguntas.<br /><br />Quando tiver certeza de sua resposta, clique no bot&#x00E3;o "?".<br /><br />Ao fim de cada quest&#x00E3;o, clique no bot&#x00E3;o "OK".<br /><br />Para ir a pr&#x00F3;xima quest&#x00E3;o, clique no bot&#x00E3;o "=&gt;" e para ver a quest&#x00E3;o anterior clique no bot&#x00E3;o "&lt;=".</h2>
 
 </div>
 
@@ -1578,10 +1664,7 @@ function CheckFinished(){
 	<div id="Instructions"></div>
 </div>
 
-
 <div id="ContainerDiv">
-
-
 
 <div class="ExerciseContainer">
 
@@ -1603,20 +1686,13 @@ function CheckFinished(){
 </div>
  
 <ol class="QuizQuestions" id="Questions">
-<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText"> A Usabilidade &#x00E9; um atributo qualitativo, que consiste nos seguintes componentes de qualidade: <p class="valorQuestao">(ACERTE E GANHE A PRIMEIRA ESFERA DA USABILIDADE)</p> </div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">?</button>&#160;&#160;Aprendizado, Efici&#x00EA;ncia, Erro, Mem&#x00F3;ria e Satisfa&#x00E7;&#x00E3;o.</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">?</button>&#160;&#160;Aprendizado, An&#x00E1;lise, Erro, Satisfa&#x00E7;&#x00E3;o e Efici&#x00EA;ncia.</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">?</button>&#160;&#160;An&#x00E1;lise, Efic&#x00E1;cia, Efici&#x00EA;ncia, Satisfa&#x00E7;&#x00E3;o e Mem&#x00F3;ria.</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">?</button>&#160;&#160;An&#x00E1;lise, Efici&#x00EA;ncia, Sustentabilidade, Erro e Mem&#x00F3;ria.</li></ol><img src="https://media.discordapp.net/attachments/985328330435870764/987054639771943023/PRIMEIRA_ESFERA.png?width=427&height=427" alt="Primeira esfera da usabilidade" class="EsferaUsabilidade" title="Primeira Esfera da Usabilidade"></li>
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Em uma situa&#x00E7;&#x00E3;o hipot&#x00E9;tica, voc&#x00EA; est&#x00E1; fazendo um download de um software, mas n&#x00E3;o mostra um feedback do sistema como est&#x00E1; o andamento desse processo. Qual &#x00E9; a heur&#x00ED;stica que est&#x00E1; sendo violada?</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">?</button>&#160;&#160;Preven&#x00E7;&#x00F5;es de erros</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">?</button>&#160;&#160;Liberdade de controle f&#x00E1;cil pro usu&#x00E1;rio</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">?</button>&#160;&#160;Visibilidade do sistema</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">?</button>&#160;&#160;Correspond&#x00EA;ncia entre o sistema e o mundo real</li></ol></li>
 
-
-
-<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Segundo Nielsen e Loranger, "Usabilidade &#x00E9; um atributo de qualidade relacionado &#x00E0; facilidade do uso de algo; Se a pessoa n&#x00E3;o puder ou n&#x00E3;o utilizar um recurso, ele pode muito bem n&#x00E3;o existir".<br />A afirma&#x00E7;&#x00E3;o acima &#x00E9; <p class="valorQuestao">(ACERTE E GANHE A SEGUNDA E TERCEIRA ESFERA DA USABILIDADE)</p></div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">?</button>&#160;&#160;Correta. </li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">?</button>&#160;&#160;Falsa.</li></ol><img src="https://media.discordapp.net/attachments/985328330435870764/987054640636002344/SEGUNDA_ESFERA.png?width=427&height=427" alt="Segunda esfera da usabilidade" class="EsferaUsabilidade" title="Segunda Esfera da Usabilidade"><img src="https://media.discordapp.net/attachments/985328330435870764/987054641789411368/TERCEIRA_ESFERA.png?width=427&height=427" alt="Terceira esfera da usabilidade" class="EsferaUsabilidade" title="Terceira Esfera da Usabilidade"></li>
-
-
-<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Segundo Preece, Rogers e Sharp, "Projetar produtos interativos para apoiar o modo como as pessoas se comunicam e interagem em seus cotidianos, seja em casa ou no trabalho.".<br />Isto diz respeito ao:<p class="valorQuestao">(ACERTE E GANHE A QUARTA ESFERA DA USABILIDADE)</p></div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">?</button>&#160;&#160;Teste de usabilidade.</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">?</button>&#160;&#160;Design centrado no usu&#x00E1;rio.</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">?</button>&#160;&#160;Design de Intera&#x00E7;&#x00E3;o.</li><li id="Q_2_3"><button class="FuncButton" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">?</button>&#160;&#160;Design de experi&#x00EA;ncia.</li></ol><img src="https://media.discordapp.net/attachments/985328330435870764/987054640052977744/QUARTA_ESFERA.png?width=427&height=427" alt="Quarta esfera da usabilidade" class="EsferaUsabilidade" title="Quarta Esfera da Usabilidade"></li>
-
-
-<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Concep&#x00E7;&#x00E3;o de um produto no que se refere a sua forma f&#x00ED;sica e funcionalidade. Esta defini&#x00E7;&#x00E3;o se refere a:<p class="valorQuestao">(ACERTE E GANHE A QUINTA E SEXTA ESFERA DA USABILIDADE)</p></div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">?</button>&#160;&#160;Usabilidade.</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">?</button>&#160;&#160;Interface.</li><li id="Q_3_2"><button class="FuncButton" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">?</button>&#160;&#160;IHC.</li><li id="Q_3_3"><button class="FuncButton" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">?</button>&#160;&#160;Design.</li></ol><img src="https://media.discordapp.net/attachments/985328330435870764/987054640380145694/QUINTA_ESFERA.png?width=427&height=427" alt="Quinta esfera da usabilidade" class="EsferaUsabilidade" title="Quinta Esfera da Usabilidade" id="quintaEsfera"><img src="https://media.discordapp.net/attachments/985328330435870764/987054641328054272/SEXTA_ESFERA.png?width=427&height=427" alt="Sexta esfera da usabilidade" class="EsferaUsabilidade" title="Sexta Esfera da Usabilidade"></li>
-
-
-<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Qual a defini&#x00E7;&#x00E3;o de Usabilidade &#x00E9; a mais completa?<p class="valorQuestao">(ACERTE E GANHE A SÉTIMA ESFERA DA USABILIDADE E INVOQUE SHENLONG)</p></div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">?</button>&#160;&#160;Usabilidade &#x00E9; a facilidade de uso de um sistema voltado para um p&#x00FA;blico alvo espec&#x00ED;fico.</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">?</button>&#160;&#160;Usabilidade &#x00E9; a facilidade de uso com prop&#x00F3;sito espec&#x00ED;fico, para um p&#x00FA;blico espec&#x00ED;fico, com uma finalidade espec&#x00ED;fica.</li><li id="Q_4_2"><button class="FuncButton" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">?</button>&#160;&#160;Usabilidade &#x00E9; mensurar a felicidade de um usu&#x00E1;rio ao utilizar o seu sistema.</li><li id="Q_4_3"><button class="FuncButton" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">?</button>&#160;&#160;Usabilidade &#x00E9; a aplica&#x00E7;&#x00E3;o espec&#x00ED;fica de um sistema para atingir &#x00E0;s expectativas de um p&#x00FA;blico alvo.</li></ol><img src="https://media.discordapp.net/attachments/985328330435870764/987054641034448976/SETIMA_ESFERA.png?width=427&height=427" alt="Sétima esfera da usabilidade" class="EsferaUsabilidade" title="Sétima Esfera da Usabilidade"></li></ol>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Usabilidade &#x00E9; uma medida de qu&#x00E3;o bem um usu&#x00E1;rio espec&#x00ED;fico em um contexto espec&#x00ED;fico pode usar um produto/design para atingir um objetivo definido de forma eficaz, eficiente e satisfat&#x00F3;ria. No seu design a usabilidade deve conter:</div><ol class="MSelAnswers"><li id="Q_1_0"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_1_0_Chk" class="MSelCheckbox" />Efic&#x00E1;cia</div></form></li><li id="Q_1_1"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_1_1_Chk" class="MSelCheckbox" />Bondade</div></form></li><li id="Q_1_2"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_1_2_Chk" class="MSelCheckbox" />Efici&#x00EA;ncia</div></form></li><li id="Q_1_3"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_1_3_Chk" class="MSelCheckbox" />Fofura</div></form></li><li id="Q_1_4"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_1_4_Chk" class="MSelCheckbox" />Engajamento</div></form></li><li id="Q_1_5"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_1_5_Chk" class="MSelCheckbox" />Tol&#x00EA;rancia a erros</div></form></li><li id="Q_1_6"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_1_6_Chk" class="MSelCheckbox" />Facilidade de aprendizado</div></form></li></ol><button class="FuncButton" onclick="CheckMultiSelAnswer(1)">Check</button></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Assinale a alternativa INCORRETA</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">?</button>&#160;&#160;Imite o mundo real em rela&#x00E7;&#x00E3;o a conceitos, &#x00ED;cones e linguagem.</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">?</button>&#160;&#160;Apresente mensagens e a&#x00E7;&#x00F5;es instantaneamente compreens&#x00ED;veis e sem jarg&#x00F5;es.</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">?</button>&#160;&#160;N&#x00E3;o &#x00E9; desnecess&#x00E1;rio fazer testes de usabilidade.</li><li id="Q_2_3"><button class="FuncButton" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">?</button>&#160;&#160;N&#x00E3;o &#x00E9; necess&#x00E1;rio descrever os links contidos no site.</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Jakob Nielsen &#x00E9; um especialista em melhorias r&#x00E1;pidas e baratas de interface de usu&#x00E1;rio e inventou as chamadas heur&#x00ED;sticas de Nielsen, afim de fazer cada vez mais f&#x00E1;cil a experi&#x00EA;ncia do usu&#x00E1;rio com a tecnologia. De acordo com Jakob, os usu&#x00E1;rios:</div><ol class="MSelAnswers"><li id="Q_3_0"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_3_0_Chk" class="MSelCheckbox" />S&#x00E3;o confi&#x00E1;veis pois sabem o que querem, tem convic&#x00E7;&#x00E3;o do que falam e tem o direito de ter uma opni&#x00E3;o formada sobre usabilidade.</div></form></li><li id="Q_3_1"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_3_1_Chk" class="MSelCheckbox" />Tem que prestar aten&#x00E7;&#x00E3;o ao que os usu&#x00E1;rios dizem, n&#x00E3;o ao que fazem.</div></form></li><li id="Q_3_2"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_3_2_Chk" class="MSelCheckbox" />Tinham uma opni&#x00E3;o forte sobre as especula&#x00E7;&#x00F5;es sobre comportamento futuro</div></form></li><li id="Q_3_3"><form method="post" onsubmit="return false;"><div><input type="checkbox" id="Q_3_3_Chk" class="MSelCheckbox" />N&#x00E3;o sabem o que querem e as alega&#x00E7;&#x00F5;es auto-relatadas n&#x00E3;o s&#x00E3;o confi&#x00E1;veis</div></form></li></ol><button class="FuncButton" onclick="CheckMultiSelAnswer(3)">Check</button></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Em uma situa&#x00E7;&#x00E3;o hipot&#x00E9;tica, voc&#x00EA; est&#x00E1; mexendo em um site e derrepente &#x00E9; sobrecarregado de informa&#x00E7;&#x00F5;es na tela, n&#x00E3;o sabe para onde olhar. Qual heur&#x00ED;stica est&#x00E1; sendo violada nessa situa&#x00E7;&#x00E3;o?  <br> <br> <img src="https://cdn.discordapp.com/attachments/985328330435870764/987155303252496436/zyro-image.png" alt="Site do detran" width="550px"><br /><br /> </div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">?</button>&#160;&#160;Consist&#x00EA;ncia e padr&#x00F5;es</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">?</button>&#160;&#160;Est&#x00E9;tica e design minimalista</li><li id="Q_4_2"><button class="FuncButton" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">?</button>&#160;&#160;Liberdade de controle f&#x00E1;cil pro usu&#x00E1;rio</li><li id="Q_4_3"><button class="FuncButton" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">?</button>&#160;&#160;Flexibilidade e efici&#x00EA;ncia de uso</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">Qual a principal linguagem de marca&#x00E7;&#x00E3;o na usabilidade?</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">?</button>&#160;&#160;XHTML</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">?</button>&#160;&#160;SGML</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">?</button>&#160;&#160;HTML</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">?</button>&#160;&#160;XML</li></ol></li></ol>
 
 
 
@@ -1629,18 +1705,26 @@ function CheckFinished(){
 <button id="FeedbackOKButton" class="FuncButton" onclick="HideFeedback(); return false;">&#160;OK&#160;</button>
 </div>
 
-<!-- BeginBottomNavButtons -->
-
 
 <div class="NavButtonBar" id="BottomNavBar">
 
 
 
-<button class="NavButton" onclick="location='https://github.com/thauanoliveiraa'; return false;"> <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo Github" width="40px" title="Github"><br>Github</button>
+	<button class="NavButton" onclick="location='https://github.com/FilipeMagal'; return false;"> <img src="https://cdn.discordapp.com/attachments/985328330435870764/987150205549944873/Github.png" alt="Logo Github" width="40px" title="Github"><br>Github</button>
+	
+	<button class="NavButton" onclick="location='https://www.linkedin.com/in/filipe-magalhães-lima-26a78b225/'; return false;"> <img src="https://cdn.discordapp.com/attachments/985328330435870764/987148840773759016/Linkedin.png" alt="Logo Linkedin" width="40px" title="Linkedin"><br>Linkedin</button>
+	
+	<button class="NavButton" onclick="location='https://www.instagram.com/xtfilipe_lima/'; return false;"> <img src="https://cdn.discordapp.com/attachments/985328330435870764/987150887917088788/insta.png" alt="Logo Instagram" width="40px" title="Instagram"><br>Instagram</button>
+	<button class="NavButton" onclick="location='https://sites.google.com/d/1bRM-5LOAxQpH5NITaYU63fj8kw8TTBWk/p/1Rmo7bs9qR0VMDKQZkqznlJ1D4GwjcaMN/edit'; return false;"><img src="https://cdn.discordapp.com/attachments/985328330435870764/987147720609374340/cogu.png" alt="Logo Home" width="45px" title="Cogumelo"><br>Home</button>
+	
+	</div>
+	
 
-<button class="NavButton" onclick="location='https://www.linkedin.com/in/thauan-de-oliveira-ramos-396b66224/details/skills/?locale=pt_BR'; return false;"> <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="Logo Linkedin" width="40px" title="Linkedin"><br>Linkedin</button>
 
-<button class="NavButton" onclick="location='https://www.instagram.com/thx0liver/'; return false;"> <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Logo Instagram" width="40px" title="Instagram"><br>Instagram</button>
+
+
+
+
 
 
 </div>
@@ -1654,5 +1738,6 @@ function CheckFinished(){
 <!-- EndSubmissionForm -->
 
 </body>
+</style>
 
 </html>
