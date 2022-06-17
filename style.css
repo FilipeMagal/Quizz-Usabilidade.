@@ -9,7 +9,7 @@ body{
 
 
 :root{
-	--strFontSize:       18px;
+	--strFontSize:       5px;
 	--strTextColor:      #000000;
 	--strTitleColor:     #000000;;
 
@@ -31,28 +31,13 @@ body{
 	margin-right: 5%;
 	margin-left: 5%;
 	font-size: var(--strFontSize);
-	padding-bottom: 5em;;
+	padding-bottom: 10em;;
 	margin-right: 5%;
 	margin-left: 5%;
 	padding-bottom: 5em;
 	zoom: 90%;
 }
 
-.EsferaUsabilidade{
-	width: 350px;
-	margin-top: -200px;
-	margin-left: 900px;
-	
-}
-
-#quintaEsfera{
-	padding-bottom: px;
-}
-
-.valorQuestao{
-	font-size: 25px;
-	color: red;
-}
 
 p{
 	text-align: left;
@@ -169,13 +154,6 @@ span#TimerText{
 	color: var(--strTitleColor);
 }
 
-span.Instructions{
-
-}
-
-div.ExerciseText{
-
-}
 
 .FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
 	color: var(--strTitleColor);
@@ -194,9 +172,6 @@ div.ExerciseText{
 	text-align: left;
 }
 
-span.CorrectMark{
-
-}
 
 input, textarea{
 	font-family: var(--strFontFace);
